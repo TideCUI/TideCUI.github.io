@@ -46,6 +46,10 @@
 
 </head>
 
+<!--动态线条背景-->
+
+
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -53,7 +57,7 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;"></div>
+<div class="overlay" style="background: rgba(0,0,0,0.5);background: url('/project/img/love.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/project/" class="profilepic">
@@ -80,7 +84,7 @@
 			总文章数 2
 		</nav>	
 		<nav>
-			总字数 <span class="post-count">1.5k</span>
+			总字数 <span class="post-count">1.6k</span>
 		</nav>
 
 		<nav class="header-smart-menu">
@@ -134,6 +138,18 @@
 				
 			</div>
 		
+			
+			
+			
+			
+			<div>
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5410275&auto=1&height=66"></iframe>
+			</div>
+			
+				
+				<p style="font-size: 12px;">Bring u to my heart！<p>
+			
+		
 		</nav>
 	</header>		
 </div>
@@ -149,7 +165,7 @@
       
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: rgba(0,0,0,0.5)"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -237,7 +253,7 @@
             
 
   
-    <article id="post-hexo-博客优化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hexo-theme--yilia-plus" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -245,7 +261,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/project/2022/07/14/hexo-%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" target="_blank">hexo 博客优化</a>
+	  <a class="article-title" href="/project/2022/07/14/hexo-theme--yilia-plus/" target="_blank">hexo theme--yilia-plus</a>
   
     </h1>
   
@@ -253,7 +269,7 @@
 
   
   
-<a href="/project/2022/07/14/hexo-%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/" class="archive-article-date">
+<a href="/project/2022/07/14/hexo-theme--yilia-plus/" class="archive-article-date">
         <time datetime="2022-07-14T12:17:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-14</time>
 </a>
 
@@ -267,8 +283,18 @@
 
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="Hexo-theme"><a href="#Hexo-theme" class="headerlink" title="Hexo theme"></a>Hexo theme</h1><p>使用的是yilia-plus theme</p>
+    <h1 id="Hexo-theme-download"><a href="#Hexo-theme-download" class="headerlink" title="Hexo theme download"></a>Hexo theme download</h1><p>可在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo官网</a>下载心仪的主题，我选用的是主流主题yilia-plus，方便纠错 </p>
 <p><a target="_blank" rel="noopener" href="https://github.com/JoeyBling/hexo-theme-yilia-plus">下载地址</a></p>
+<p>先看其readme.md文档,这是效果图</p>
+<p><img src="/project/../../../Study/Typora/pic/image-20220716013944553.png" alt="image-20220716013944553"></p>
+<h1 id="安装流程"><a href="#安装流程" class="headerlink" title="安装流程"></a>安装流程</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ./themes/</span><br><span class="line">git clone --depth=<span class="number">1</span> https:<span class="comment">//github.com/JoeyBling/hexo-theme-yilia-plus.git ./yilia-plus</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>修改hexo根目录下的<code>_config.yml</code> :arrow_right: <code>theme: yilia-plus</code></p>
+<p><img src="/project/../../../Study/Typora/pic/image-20220716015207150.png" alt="image-20220716015207150"></p>
+<h1 id="样式微调"><a href="#样式微调" class="headerlink" title="样式微调"></a>样式微调</h1><p>后续大部分在<code>\themes\yilia-plus</code> 下的<code>_config.yml</code> 进行更改</p>
+<p><img src="/project/../../../Study/Typora/pic/image-20220716015658314.png" alt="image-20220716015658314"></p>
+<p>注意与根目录下的<code>_config.yml</code> 区别开，两者均会用到</p>
+<p><img src="/project/../../../Study/Typora/pic/image-20220716015854087.png" alt="image-20220716015854087"></p>
 
     
 
@@ -306,7 +332,7 @@
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/project/2022/07/14/hexo-%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/">展开全文 >></a>
+      <a class="article-more-a" href="/project/2022/07/14/hexo-theme--yilia-plus/">展开全文 >></a>
     </p>
     
 
@@ -565,11 +591,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">hexo-theme</a>
+                <a href="javascript:void(0)" class="js-tag color4">hexo配置部署</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">hexo配置部署</a>
+                <a href="javascript:void(0)" class="js-tag color1">hexo-theme</a>
               </li>
             
             <div class="clearfix"></div>
@@ -757,6 +783,16 @@
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/project/plugins/ribbon.js/ribbon.min.js"></script> -->
   
   
+  
+  <script type="text/javascript" src="/project/lib/snow.js"></script>
+  <script type="text/javascript" src="/project/lib/jquery-2.1.4.min.js"></script>
+  <script>
+    snow.down();
+    $(window).resize(function() {
+      $("canvas").css("z-index","500").remove();
+      snow.down();
+    });
+  </script>
   
 </body>
 

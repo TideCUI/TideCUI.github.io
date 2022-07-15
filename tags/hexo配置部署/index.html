@@ -42,6 +42,10 @@
 
 </head>
 
+<!--动态线条背景-->
+
+
+
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
@@ -49,7 +53,7 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;"></div>
+<div class="overlay" style="background: rgba(0,0,0,0.5);background: url('/project/img/love.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/project/" class="profilepic">
@@ -76,7 +80,7 @@
 			总文章数 2
 		</nav>	
 		<nav>
-			总字数 <span class="post-count">1.5k</span>
+			总字数 <span class="post-count">1.6k</span>
 		</nav>
 
 		<nav class="header-smart-menu">
@@ -130,6 +134,18 @@
 				
 			</div>
 		
+			
+			
+			
+			
+			<div>
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=5410275&auto=1&height=66"></iframe>
+			</div>
+			
+				
+				<p style="font-size: 12px;">Bring u to my heart！<p>
+			
+		
 		</nav>
 	</header>		
 </div>
@@ -145,7 +161,7 @@
       
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: rgba(0,0,0,0.5)"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -428,11 +444,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">hexo-theme</a>
+                <a href="javascript:void(0)" class="js-tag color4">hexo配置部署</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">hexo配置部署</a>
+                <a href="javascript:void(0)" class="js-tag color1">hexo-theme</a>
               </li>
             
             <div class="clearfix"></div>
@@ -620,6 +636,16 @@
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/project/plugins/ribbon.js/ribbon.min.js"></script> -->
   
   
+  
+  <script type="text/javascript" src="/project/lib/snow.js"></script>
+  <script type="text/javascript" src="/project/lib/jquery-2.1.4.min.js"></script>
+  <script>
+    snow.down();
+    $(window).resize(function() {
+      $("canvas").css("z-index","500").remove();
+      snow.down();
+    });
+  </script>
   
 </body>
 
